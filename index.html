@@ -13,28 +13,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container m-5">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-8">
-          <h1 id="searched" class="display-6 text-center text-white fw-bold">
+    <div class="container w-100 h-100">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col my-5">
+          <h1 id="searched" class="display-6 text-center fw-bold">
             Financial Requests
           </h1>
-          <p class="text-center text-white">
-            Making requests using Vanilla Javascript.
-          </p>
+          <p class="text-center">Fetching requests using Vanilla Javascript.</p>
 
           <form
             id="search-form"
             class="row align-items-center justify-content-center"
           >
             <input
-              class="form-control form-control-lg"
+              class="form-control"
               type="text"
               style="color: #000"
               placeholder="Search for tesla, bitcoin..."
               id="search-box"
             />
-            <button type="submit" class="btn w-25 mt-5 btn-light">
+            <button type="submit" class="btn w-25 mt-5 btn-outline-light">
               Search
             </button>
           </form>
@@ -62,7 +60,7 @@
                     <h6 id="heading" class="mb-0">
                       Bloomberg News Provided by Rapid API
                     </h6>
-                    <a id="news_url" class="mb-0 opacity-75">
+                    <a id="news_url" class="mb-0 text-muted opacity-75">
                       Search made by Four Pixels
                     </a>
                   </div>

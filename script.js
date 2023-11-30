@@ -4,7 +4,7 @@ const searchBox = document.getElementById("search-box");
 const rootElement = document.getElementById("root");
 const searched = document.getElementById("searched");
 
-let keyword = "";
+let keyword = "Nairobi";
 let page = 1;
 
 // Function to create a news item element
@@ -58,6 +58,9 @@ async function fetchBloombergNews() {
     });
 
     if (!response.ok) {
+      alert(
+        "Failed to load, restart the browser or check for internet connection."
+      );
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
@@ -66,15 +69,18 @@ async function fetchBloombergNews() {
     // Clear existing news items
     rootElement.innerHTML = "";
 
+    var numResults = 25;
+
     // Display the first 10 news items
-    for (let i = 0; i < Math.min(5, data.news.length); i++) {
+    for (let i = 0; i < Math.min(numResults, data.news.length); i++) {
+      console.log("Data: ", data);
       const post = data.news[i];
       const newsItem = createNewsItem(post);
       rootElement.appendChild(newsItem);
     }
 
     // Update the searched element
-    searched.innerHTML = `Today's ${keyword} Report`;
+    searched.innerHTML = `Happening today in ${keyword}`;
 
     // Process data as needed
   } catch (error) {
@@ -89,5 +95,4 @@ searchForm.addEventListener("submit", (e) => {
   fetchBloombergNews();
 });
 
-// Initial fetch on page load
 fetchBloombergNews();
