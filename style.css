@@ -1,0 +1,11 @@
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: #000000;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)),
+    url("four-pixel-newspaper.jpg");
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Four Pixels Financial Requests</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container m-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-8">
+          <h1 id="searched" class="display-6 text-center text-white fw-bold">
+            Financial Requests
+          </h1>
+          <p class="text-center text-white">
+            Making requests using Vanilla Javascript.
+          </p>
+
+          <form
+            id="search-form"
+            class="row align-items-center justify-content-center"
+          >
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              style="color: #000"
+              placeholder="Search for tesla, bitcoin..."
+              id="search-box"
+            />
+            <button type="submit" class="btn w-25 mt-5 btn-light">
+              Search
+            </button>
+          </form>
+
+          <div
+            class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center"
+          >
+            <div id="root" class="list-group">
+              <!-- News items start -->
+              <div
+                class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                aria-current="true"
+                id="news-item"
+              >
+                <img
+                  id="image"
+                  src="avatar.png"
+                  alt="twbs"
+                  width="32"
+                  height="32"
+                  class="rounded-circle flex-shrink-0"
+                />
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 id="heading" class="mb-0">
+                      Bloomberg News Provided by Rapid API
+                    </h6>
+                    <a id="news_url" class="mb-0 opacity-75">
+                      Search made by Four Pixels
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- News items end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
