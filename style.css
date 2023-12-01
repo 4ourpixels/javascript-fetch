@@ -1,4 +1,4 @@
-body {
+#bloomgerg {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -9,10 +9,9 @@ body {
   left: 0;
   height: 100%;
   color: #fff;
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.942),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url(https://images.unsplash.com/photo-1546422904-90eab23c3d7e?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background: url(undraw_search_app_oso2.svg);
+}
+
+.hidden {
+  display: none;
 }

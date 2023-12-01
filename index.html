@@ -12,10 +12,10 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="bloomberg">
     <div class="container w-100 h-100">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col my-5">
+        <div class="col-sm-10 col-md-8 col-lg-6 my-5">
           <h1 id="searched" class="display-6 text-center fw-bold">
             Financial Requests
           </h1>
@@ -32,11 +32,12 @@
               placeholder="Search for tesla, bitcoin..."
               id="search-box"
             />
-            <button type="submit" class="btn w-25 mt-5 btn-outline-light">
+            <button type="submit" class="btn w-25 mt-5 btn-outline-dark">
               Search
             </button>
           </form>
 
+          <h3 id="loading-text" class="fw-bold text-center my-3"></h3>
           <div
             class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center"
           >
